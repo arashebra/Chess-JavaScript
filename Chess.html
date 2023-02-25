@@ -1,0 +1,190 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="Chess.css">
+</head>
+
+<body>
+
+    <div class="center">
+        <h1 id="player_name">White Player</h1>
+    </div>
+
+    <div id="board_1">
+        <div class="row">
+            <div class="square_white" id="id1_0_0">♜</div>
+            <div class="square_black" id="id1_0_1">♞</div>
+            <div class="square_white" id="id1_0_2">♝</div>
+            <div class="square_black" id="id1_0_3">♛</div>
+            <div class="square_white" id="id1_0_4">♚</div>
+            <div class="square_black" id="id1_0_5">♝</div>
+            <div class="square_white" id="id1_0_6">♞</div>
+            <div class="square_black" id="id1_0_7">♜</div>
+        </div>
+        <div class="row">
+            <div class="square_black" id="id1_1_0">♟</div>
+            <div class="square_white" id="id1_1_1">♟</div>
+            <div class="square_black" id="id1_1_2">♟</div>
+            <div class="square_white" id="id1_1_3">♟</div>
+            <div class="square_black" id="id1_1_4">♟</div>
+            <div class="square_white" id="id1_1_5">♟</div>
+            <div class="square_black" id="id1_1_6">♟</div>
+            <div class="square_white" id="id1_1_7">♟</div>
+        </div>
+        <div class="row">
+            <div class="square_white" id="id1_2_0"></div>
+            <div class="square_black" id="id1_2_1"></div>
+            <div class="square_white" id="id1_2_2"></div>
+            <div class="square_black" id="id1_2_3"></div>
+            <div class="square_white" id="id1_2_4"></div>
+            <div class="square_black" id="id1_2_5"></div>
+            <div class="square_white" id="id1_2_6"></div>
+            <div class="square_black" id="id1_2_7"></div>
+        </div>
+        <div class="row">
+            <div class="square_black" id="id1_3_0"></div>
+            <div class="square_white" id="id1_3_1"></div>
+            <div class="square_black" id="id1_3_2"></div>
+            <div class="square_white" id="id1_3_3"></div>
+            <div class="square_black" id="id1_3_4"></div>
+            <div class="square_white" id="id1_3_5"></div>
+            <div class="square_black" id="id1_3_6"></div>
+            <div class="square_white" id="id1_3_7"></div>
+        </div>
+        <div class="row">
+            <div class="square_white" id="id1_4_0"></div>
+            <div class="square_black" id="id1_4_1"></div>
+            <div class="square_white" id="id1_4_2"></div>
+            <div class="square_black" id="id1_4_3"></div>
+            <div class="square_white" id="id1_4_4"></div>
+            <div class="square_black" id="id1_4_5"></div>
+            <div class="square_white" id="id1_4_6"></div>
+            <div class="square_black" id="id1_4_7"></div>
+        </div>
+        <div class="row">
+            <div class="square_black" id="id1_5_0"></div>
+            <div class="square_white" id="id1_5_1"></div>
+            <div class="square_black" id="id1_5_2"></div>
+            <div class="square_white" id="id1_5_3"></div>
+            <div class="square_black" id="id1_5_4"></div>
+            <div class="square_white" id="id1_5_5"></div>
+            <div class="square_black" id="id1_5_6"></div>
+            <div class="square_white" id="id1_5_7"></div>
+        </div>
+        <div class="row">
+            <div class="square_white" id="id1_6_0">♙</div>
+            <div class="square_black" id="id1_6_1">♙</div>
+            <div class="square_white" id="id1_6_2">♙</div>
+            <div class="square_black" id="id1_6_3">♙</div>
+            <div class="square_white" id="id1_6_4">♙</div>
+            <div class="square_black" id="id1_6_5">♙</div>
+            <div class="square_white" id="id1_6_6">♙</div>
+            <div class="square_black" id="id1_6_7">♙</div>
+        </div>
+        <div class="row">
+            <div class="square_black" id="id1_7_0">♖</div>
+            <div class="square_white" id="id1_7_1">♘</div>
+            <div class="square_black" id="id1_7_2">♗</div>
+            <div class="square_white" id="id1_7_3">♕</div>
+            <div class="square_black" id="id1_7_4">♔</div>
+            <div class="square_white" id="id1_7_5">♗</div>
+            <div class="square_black" id="id1_7_6">♘</div>
+            <div class="square_white" id="id1_7_7">♖</div>
+        </div>
+    </div>
+
+
+    <div id="board_2">
+        <div class="row">
+            <div class="square_white" id="id2_0_0"></div>
+            <div class="square_black" id="id2_0_1"></div>
+            <div class="square_white" id="id2_0_2"></div>
+            <div class="square_black" id="id2_0_3"></div>
+            <div class="square_white" id="id2_0_4"></div>
+            <div class="square_black" id="id2_0_5"></div>
+            <div class="square_white" id="id2_0_6"></div>
+            <div class="square_black" id="id2_0_7"></div>
+        </div>
+        <div class="row">
+            <div class="square_black" id="id2_1_0"></div>
+            <div class="square_white" id="id2_1_1"></div>
+            <div class="square_black" id="id2_1_2"></div>
+            <div class="square_white" id="id2_1_3"></div>
+            <div class="square_black" id="id2_1_4"></div>
+            <div class="square_white" id="id2_1_5"></div>
+            <div class="square_black" id="id2_1_6"></div>
+            <div class="square_white" id="id2_1_7"></div>
+        </div>
+        <div class="row">
+            <div class="square_white" id="id2_2_0"></div>
+            <div class="square_black" id="id2_2_1"></div>
+            <div class="square_white" id="id2_2_2"></div>
+            <div class="square_black" id="id2_2_3"></div>
+            <div class="square_white" id="id2_2_4"></div>
+            <div class="square_black" id="id2_2_5"></div>
+            <div class="square_white" id="id2_2_6"></div>
+            <div class="square_black" id="id2_2_7"></div>
+        </div>
+        <div class="row">
+            <div class="square_black" id="id2_3_0"></div>
+            <div class="square_white" id="id2_3_1"></div>
+            <div class="square_black" id="id2_3_2"></div>
+            <div class="square_white" id="id2_3_3"></div>
+            <div class="square_black" id="id2_3_4"></div>
+            <div class="square_white" id="id2_3_5"></div>
+            <div class="square_black" id="id2_3_6"></div>
+            <div class="square_white" id="id2_3_7"></div>
+        </div>
+        <div class="row">
+            <div class="square_white" id="id2_4_0"></div>
+            <div class="square_black" id="id2_4_1"></div>
+            <div class="square_white" id="id2_4_2"></div>
+            <div class="square_black" id="id2_4_3"></div>
+            <div class="square_white" id="id2_4_4"></div>
+            <div class="square_black" id="id2_4_5"></div>
+            <div class="square_white" id="id2_4_6"></div>
+            <div class="square_black" id="id2_4_7"></div>
+        </div>
+        <div class="row">
+            <div class="square_black" id="id2_5_0"></div>
+            <div class="square_white" id="id2_5_1"></div>
+            <div class="square_black" id="id2_5_2"></div>
+            <div class="square_white" id="id2_5_3"></div>
+            <div class="square_black" id="id2_5_4"></div>
+            <div class="square_white" id="id2_5_5"></div>
+            <div class="square_black" id="id2_5_6"></div>
+            <div class="square_white" id="id2_5_7"></div>
+        </div>
+        <div class="row">
+            <div class="square_white" id="id2_6_0"></div>
+            <div class="square_black" id="id2_6_1"></div>
+            <div class="square_white" id="id2_6_2"></div>
+            <div class="square_black" id="id2_6_3"></div>
+            <div class="square_white" id="id2_6_4"></div>
+            <div class="square_black" id="id2_6_5"></div>
+            <div class="square_white" id="id2_6_6"></div>
+            <div class="square_black" id="id2_6_7"></div>
+        </div>
+        <div class="row">
+            <div class="square_black" id="id2_7_0"></div>
+            <div class="square_white" id="id2_7_1"></div>
+            <div class="square_black" id="id2_7_2"></div>
+            <div class="square_white" id="id2_7_3"></div>
+            <div class="square_black" id="id2_7_4"></div>
+            <div class="square_white" id="id2_7_5"></div>
+            <div class="square_black" id="id2_7_6"></div>
+            <div class="square_white" id="id2_7_7"></div>
+        </div>
+    </div>
+
+
+
+
+    <script src="Chess.js"></script>
+</body>
+
+</html>
