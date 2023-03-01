@@ -98,7 +98,7 @@ function possible_movements(row, column) {
                     if (!checkmate(true, mboard) || !is_player_throten_side())
                         board_on[row - 1][column] = 2;
                 }
-                if (board[row - 2][column] == 0) {
+                if (board[row - 2][column] == 0 && board[row - 1][column] == 0) {
                     let mboard = array_copy(board);
                     mboard[row][column] = 0;
                     mboard[row - 2][column] = 6;
@@ -150,7 +150,7 @@ function possible_movements(row, column) {
                 if (!checkmate(true, mboard))
                     board_on[row + 1][column] = 2;
             }
-            if (board[row + 2][column] == 0) {
+            if (board[row + 2][column] == 0 && board[row + 1][column] == 0) {
                 let mboard = array_copy(board);
                 mboard[row][column] = 0;
                 mboard[row + 2][column] = -6;
